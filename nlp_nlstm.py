@@ -19,8 +19,6 @@ from sklearn.metrics import accuracy_score
 def prepare_sequence(seq, to_ix):
     idxs = [to_ix[w] for w in seq]
     return torch.tensor(idxs, dtype=torch.long)
-
-
 import nltk
 nltk.download('brown')
 nltk.download('universal_tagset')
